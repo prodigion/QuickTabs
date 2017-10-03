@@ -1,0 +1,39 @@
+{
+  "manifest_version": 2,
+  "name": "QuickTabs",
+  "version": "1.0",
+  "description": "Switch or close tabs with a button",
+  "permissions": [
+    "tabs",
+    "storage"
+  ],
+  "background": {
+    "scripts": ["background.js"]
+  },
+
+  "options_ui": {
+      "page": "options.html",
+      "browser_style": true
+  },
+
+  "commands": {
+    "prev-tab": {
+      "suggested_key": { 
+        "default": "F1" 
+      },
+      "description": "Switch to previous tab"
+    },
+    "next-tab": {
+      "suggested_key": {
+        "default": "F2"
+      },
+      "description": "Switch to next tab"
+    },
+    "close-tab": {
+      "suggested_key": {
+        "default": "F3"
+      },
+      "description": "Close current tab"
+    }
+  }
+}
