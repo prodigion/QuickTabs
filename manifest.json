@@ -1,12 +1,18 @@
 {
   "manifest_version": 2,
   "name": "QuickTabs",
-  "version": "1.0",
+  "version": "1.1",
   "description": "Switch or close tabs with a button",
+  "homepage_url": "https://github.com/prodigion/QuickTabs",
   "permissions": [
     "tabs",
     "storage"
   ],
+  "applications": {
+    "gecko": {
+      "id": "{96c473d0-fc01-4322-afbb-9bde39219f9c}"
+    }
+  },
   "background": {
     "scripts": ["background.js"]
   },
@@ -18,21 +24,15 @@
 
   "commands": {
     "prev-tab": {
-      "suggested_key": { 
-        "default": "F1" 
-      },
+      "suggested_key": { "default": "F1" },
       "description": "Switch to previous tab"
     },
     "next-tab": {
-      "suggested_key": {
-        "default": "F2"
-      },
+      "suggested_key": { "default": "F2" },
       "description": "Switch to next tab"
     },
     "close-tab": {
-      "suggested_key": {
-        "default": "F3"
-      },
+      "suggested_key": { "default": "F3" },
       "description": "Close current tab"
     }
   }

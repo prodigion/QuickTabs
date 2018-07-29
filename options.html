@@ -6,16 +6,21 @@
   </head>
 
   <body>
-
-    <form>
-        <label>Previous Key<input type="text" id="prevKey" ></label><br/>
-        <label>Next Key<input type="text" id="nextKey" ></label><br/>
-        <label>Close Key<input type="text" id="closeKey" ></label>
-        <button type="submit">Save</button>
+    <form style="padding: 70px 0">
+      <label>Keyboard shortcuts</label><br/>
+      <div style="float:left; line-height: 2em; padding-right: 10px">
+      <label>Previous Key</label><br/>
+      <label>Next Key</label><br/>
+      <label>Close Key</label>
+      </div><div style="float:left; line-height: 2em">
+      <input type="text" id="prevKey" ><br/>
+      <input type="text" id="nextKey" ><br/>
+      <input type="text" id="closeKey" >
+      </div><div style="clear: both" />
+      <button type="submit">Save</button>
     </form>
 
     <script src="options.js"></script>
 
   </body>
-
 </html>

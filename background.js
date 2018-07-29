@@ -1,3 +1,9 @@
+browser.storage.local.get().then(results => {
+  if (results.prevKey) { browser.commands.update({ name: "prev-tab", shortcut: results.prevKey }); };
+  if (results.nextKey) { browser.commands.update({ name: "next-tab", shortcut: results.nextKey }); };
+  if (results.closeKey) { browser.commands.update({ name: "close-tab", shortcut: results.closeKey }); };
+});
+
 function onError(error) {
   console.log(`Error: ${error}`);
 }
